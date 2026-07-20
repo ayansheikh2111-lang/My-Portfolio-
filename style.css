@@ -150,6 +150,7 @@ a {
 .hero-image img {
     width: 280px;
     height: 280px;
+    align-items: center;
 
     object-fit: cover;
 
@@ -217,7 +218,14 @@ a {
 
     margin-bottom: 50px;
 }
+.hero-image img {
+    width: 280px;
+    height: 280px;
 
+    object-fit: cover;
+
+    border-radius: 50%;
+}
 
 /* =========================
    ABOUT
@@ -322,7 +330,23 @@ a {
 .project-link {
     font-weight: bold;
 }
+.back-to-portfolio {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
 
+    padding: 10px 18px;
+
+    background: #111;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+}
 
 /* =========================
    EXPERIENCE
@@ -471,6 +495,2126 @@ a {
 
     .section-title {
         font-size: 32px;
+    }
+
+}
+.profile-picture {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+/* =================================
+   EDUCATION SECTION
+================================= */
+
+.education {
+
+    padding: 120px 7%;
+
+    background: #f5f7fa;
+
+}
+
+
+.education .section-heading {
+
+    margin-bottom: 60px;
+
+}
+
+
+.education-card {
+
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 50px
+        rgba(
+            16,
+            24,
+            40,
+            0.08
+        );
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.education-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 25px 60px
+        rgba(
+            16,
+            24,
+            40,
+            0.12
+        );
+
+}
+
+
+/* Logo */
+
+.education-logo {
+
+    width: 120px;
+
+    height: 120px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    padding: 15px;
+
+    border: 1px solid #eaecf0;
+
+}
+
+
+.education-logo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+
+/* Education Details */
+
+.education-year {
+
+    color: #2563eb;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+}
+
+
+.education-content h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.education-content h4 {
+
+    font-size: 20px;
+
+    color: #2563eb;
+
+    margin-bottom: 15px;
+
+}
+
+
+.institution {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #101828;
+
+}
+
+
+.location {
+
+    color: #667085;
+
+    margin-top: 4px;
+
+}
+
+
+.education-description {
+
+    max-width: 700px;
+
+    margin-top: 20px;
+
+    color: #667085;
+
+    line-height: 1.7;
+
+}
+
+
+/* =================================
+   MOBILE EDUCATION
+================================= */
+
+@media (max-width: 700px) {
+
+    .education {
+
+        padding:
+            90px 6%;
+
+    }
+
+
+    .education-card {
+
+        padding:
+            30px;
+
+        flex-direction:
+            column;
+
+        align-items:
+            flex-start;
+
+        gap:
+            25px;
+
+    }
+
+
+    .education-logo {
+
+        width:
+            90px;
+
+        height:
+            90px;
+
+    }
+
+
+    .education-content h3 {
+
+        font-size:
+            23px;
+
+    }
+
+}
+/* =========================================
+   PREMIUM HERO — STEP 1
+========================================= */
+
+
+/* -----------------------------------------
+   HERO FOUNDATION
+----------------------------------------- */
+
+.hero {
+
+    position: relative;
+
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    isolation: isolate;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(74, 144, 226, 0.14),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 75%,
+            rgba(126, 87, 194, 0.12),
+            transparent 30%
+        ),
+
+        #080b12;
+
+    color: #f8fafc;
+
+}
+
+
+/* -----------------------------------------
+   SUBTLE GRID
+----------------------------------------- */
+
+.hero-grid {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -2;
+
+    opacity: 0.18;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255, 255, 255, 0.035) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.035) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        70px 70px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            black,
+            transparent 90%
+        );
+
+}
+
+
+/* -----------------------------------------
+   AMBIENT GLOW
+----------------------------------------- */
+
+.hero-glow {
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    pointer-events: none;
+
+    z-index: -1;
+
+    opacity: 0.35;
+
+}
+
+
+/* BLUE GLOW */
+
+.hero-glow-one {
+
+    top: -200px;
+
+    left: -150px;
+
+    background:
+        rgba(59, 130, 246, 0.22);
+
+    animation:
+        heroGlowOne
+        12s
+        ease-in-out
+        infinite;
+
+}
+
+
+/* VIOLET GLOW */
+
+.hero-glow-two {
+
+    right: -200px;
+
+    bottom: -250px;
+
+    background:
+        rgba(139, 92, 246, 0.18);
+
+    animation:
+        heroGlowTwo
+        15s
+        ease-in-out
+        infinite;
+
+}
+
+
+/* -----------------------------------------
+   HERO CONTENT
+----------------------------------------- */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+}
+
+
+/* -----------------------------------------
+   HERO TEXT
+----------------------------------------- */
+
+.hero-text {
+
+    max-width: 950px;
+
+}
+
+
+/* -----------------------------------------
+   EYEBROW
+----------------------------------------- */
+
+.hero-eyebrow {
+
+    margin-bottom: 28px;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.22em;
+
+    color:
+        #8fa9c7;
+
+    opacity: 0;
+
+    animation:
+        heroFadeUp
+        0.8s
+        ease
+        forwards;
+
+    animation-delay:
+        0.15s;
+
+}
+
+
+/* -----------------------------------------
+   MAIN TITLE
+----------------------------------------- */
+
+.hero-title {
+
+    margin: 0;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(
+            3.8rem,
+            9vw,
+            8rem
+        );
+
+    font-weight: 700;
+
+    line-height: 0.98;
+
+    letter-spacing:
+        -0.055em;
+
+}
+
+
+/* -----------------------------------------
+   "HI, I'M"
+----------------------------------------- */
+
+.hero-line {
+
+    display: block;
+
+    color:
+        #f8fafc;
+
+    opacity: 0;
+
+    transform:
+        translateY(35px);
+
+    animation:
+        heroTitleReveal
+        1s
+        cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        )
+        forwards;
+
+    animation-delay:
+        0.25s;
+
+}
+
+
+/* -----------------------------------------
+   NAME
+----------------------------------------- */
+
+.hero-name {
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-style:
+        italic;
+
+    font-weight:
+        500;
+
+    letter-spacing:
+        -0.045em;
+
+    background:
+
+        linear-gradient(
+            120deg,
+            #ffffff 0%,
+            #d9e8ff 45%,
+            #9bbcff 100%
+        );
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    -webkit-text-fill-color:
+        transparent;
+
+    opacity: 0;
+
+    transform:
+        translateY(45px);
+
+    animation:
+        heroTitleReveal
+        1.1s
+        cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        )
+        forwards;
+
+    animation-delay:
+        0.45s;
+
+}
+
+
+/* -----------------------------------------
+   DIVIDER
+----------------------------------------- */
+
+.hero-divider {
+
+    width: 0;
+
+    height: 1px;
+
+    margin:
+        42px
+        0
+        28px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.7),
+            rgba(255,255,255,0)
+        );
+
+    animation:
+
+        heroDividerReveal
+        1s
+        ease
+        forwards;
+
+    animation-delay:
+        0.9s;
+
+}
+
+
+/* -----------------------------------------
+   TAGLINE
+----------------------------------------- */
+
+.hero-tagline {
+
+    margin: 0;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        clamp(
+            1.15rem,
+            2vw,
+            1.45rem
+        );
+
+    font-weight:
+        400;
+
+    letter-spacing:
+        -0.015em;
+
+    color:
+        #aebbc9;
+
+    opacity: 0;
+
+    transform:
+        translateY(20px);
+
+    animation:
+
+        heroFadeUp
+        0.9s
+        ease
+        forwards;
+
+    animation-delay:
+        1s;
+
+}
+
+
+.hero-tagline span {
+
+    color:
+        #e8eef7;
+
+    font-weight:
+        500;
+
+}
+
+
+/* -----------------------------------------
+   SCROLL INDICATOR
+----------------------------------------- */
+
+.hero-scroll-indicator {
+
+    position: absolute;
+
+    bottom: 35px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color:
+        #6f8093;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing:
+        0.18em;
+
+    text-transform:
+        uppercase;
+
+    opacity: 0;
+
+    animation:
+
+        heroFadeUp
+        1s
+        ease
+        forwards;
+
+    animation-delay:
+        1.4s;
+
+}
+
+
+.scroll-line {
+
+    width: 1px;
+
+    height: 38px;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            #8fa9c7,
+            transparent
+        );
+
+    animation:
+
+        scrollPulse
+        2s
+        ease-in-out
+        infinite;
+
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+
+/* TEXT REVEAL */
+
+@keyframes heroTitleReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(45px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* GENERAL FADE */
+
+@keyframes heroFadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* DIVIDER */
+
+@keyframes heroDividerReveal {
+
+    from {
+
+        width: 0;
+
+    }
+
+    to {
+
+        width: 220px;
+
+    }
+
+}
+
+
+/* BLUE AMBIENT MOVEMENT */
+
+@keyframes heroGlowOne {
+
+    0%,
+    100% {
+
+        transform:
+            translate(
+                0,
+                0
+            );
+
+    }
+
+    50% {
+
+        transform:
+            translate(
+                80px,
+                50px
+            );
+
+    }
+
+}
+
+
+/* VIOLET AMBIENT MOVEMENT */
+
+@keyframes heroGlowTwo {
+
+    0%,
+    100% {
+
+        transform:
+            translate(
+                0,
+                0
+            );
+
+    }
+
+    50% {
+
+        transform:
+            translate(
+                -70px,
+                -40px
+            );
+
+    }
+
+}
+
+
+/* SCROLL PULSE */
+
+@keyframes scrollPulse {
+
+    0%,
+    100% {
+
+        opacity:
+            0.35;
+
+        transform:
+            scaleY(
+                0.7
+            );
+
+        transform-origin:
+            top;
+
+    }
+
+    50% {
+
+        opacity:
+            1;
+
+        transform:
+            scaleY(
+                1
+            );
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE HERO
+========================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        min-height:
+            calc(
+                100vh - 70px
+            );
+
+        text-align:
+            center;
+
+    }
+
+
+    .hero-text {
+
+        max-width:
+            100%;
+
+    }
+
+
+    .hero-eyebrow {
+
+        font-size:
+            10px;
+
+        letter-spacing:
+            0.15em;
+
+    }
+
+
+    .hero-title {
+
+        font-size:
+            clamp(
+                3rem,
+                14vw,
+                5rem
+            );
+
+        line-height:
+            1.05;
+
+    }
+
+
+    .hero-divider {
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+
+    }
+
+
+    .hero-scroll-indicator {
+
+        bottom:
+            20px;
+
+    }
+
+
+    .hero-glow {
+
+        width:
+            300px;
+
+        height:
+            300px;
+
+        filter:
+            blur(80px);
+
+    }
+
+}
+/* =========================================
+   HERO ACTIONS — STEP 2
+========================================= */
+
+
+/* -----------------------------------------
+   BUTTON CONTAINER
+----------------------------------------- */
+
+.hero-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 36px;
+
+    opacity: 0;
+
+    transform:
+        translateY(20px);
+
+    animation:
+
+        heroFadeUp
+        0.9s
+        ease
+        forwards;
+
+    animation-delay:
+        1.15s;
+
+}
+
+
+/* -----------------------------------------
+   BASE BUTTON
+----------------------------------------- */
+
+.hero-btn {
+
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    min-width: 180px;
+
+    padding:
+        14px
+        20px;
+
+    border-radius:
+        999px;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        14px;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        -0.01em;
+
+    overflow: hidden;
+
+    transition:
+
+        transform 0.35s
+        cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        ),
+
+        box-shadow 0.35s ease,
+
+        border-color 0.35s ease,
+
+        background 0.35s ease;
+
+}
+
+
+/* -----------------------------------------
+   PRIMARY BUTTON
+----------------------------------------- */
+
+.hero-btn-primary {
+
+    color:
+        #081019;
+
+    background:
+        #f3f7fc;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.7
+        );
+
+    box-shadow:
+
+        0 8px 30px
+        rgba(
+            0,
+            0,
+            0,
+            0.18
+        );
+
+}
+
+
+/* -----------------------------------------
+   PRIMARY HOVER
+----------------------------------------- */
+
+.hero-btn-primary:hover {
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+
+        0 15px 40px
+        rgba(
+            120,
+            160,
+            220,
+            0.22
+        );
+
+}
+
+
+/* -----------------------------------------
+   SECONDARY BUTTON
+----------------------------------------- */
+
+.hero-btn-secondary {
+
+    color:
+        #dbe6f2;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.035
+        );
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.16
+        );
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+/* -----------------------------------------
+   SECONDARY HOVER
+----------------------------------------- */
+
+.hero-btn-secondary:hover {
+
+    transform:
+        translateY(-4px);
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.08
+        );
+
+    border-color:
+        rgba(
+            255,
+            255,
+            255,
+            0.32
+        );
+
+}
+
+
+/* -----------------------------------------
+   ARROW
+----------------------------------------- */
+
+.btn-arrow {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        25px;
+
+    height:
+        25px;
+
+    border-radius:
+        50%;
+
+    font-size:
+        15px;
+
+    transition:
+        transform 0.35s
+        cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        );
+
+}
+
+
+.hero-btn:hover
+.btn-arrow {
+
+    transform:
+        translate(
+            3px,
+            -3px
+        );
+
+}
+
+
+/* -----------------------------------------
+   AVAILABILITY STATUS
+----------------------------------------- */
+
+.availability-status {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    margin-top:
+        28px;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        12px;
+
+    font-weight:
+        500;
+
+    letter-spacing:
+        0.02em;
+
+    color:
+        #7f91a5;
+
+    opacity:
+        0;
+
+    animation:
+
+        heroFadeUp
+        0.9s
+        ease
+        forwards;
+
+    animation-delay:
+        1.3s;
+
+}
+
+
+/* -----------------------------------------
+   STATUS DOT
+----------------------------------------- */
+
+.availability-dot {
+
+    position:
+        relative;
+
+    width:
+        7px;
+
+    height:
+        7px;
+
+    border-radius:
+        50%;
+
+    background:
+        #6ee7b7;
+
+    box-shadow:
+
+        0 0 0
+        0
+        rgba(
+            110,
+            231,
+            183,
+            0.5
+        );
+
+    animation:
+
+        availabilityPulse
+        2.2s
+        ease-out
+        infinite;
+
+}
+
+
+/* -----------------------------------------
+   DOT ANIMATION
+----------------------------------------- */
+
+@keyframes availabilityPulse {
+
+    0% {
+
+        box-shadow:
+
+            0 0 0
+            0
+            rgba(
+                110,
+                231,
+                183,
+                0.5
+            );
+
+    }
+
+    70% {
+
+        box-shadow:
+
+            0 0 0
+            7px
+            rgba(
+                110,
+                231,
+                183,
+                0
+            );
+
+    }
+
+    100% {
+
+        box-shadow:
+
+            0 0 0
+            0
+            rgba(
+                110,
+                231,
+                183,
+                0
+            );
+
+    }
+
+}
+/* =========================================
+   HERO BUTTONS — MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .hero-actions {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        width:
+            100%;
+
+        max-width:
+            320px;
+
+        margin-left:
+            auto;
+
+        margin-right:
+            auto;
+
+    }
+
+
+    .hero-btn {
+
+        width:
+            100%;
+
+        min-width:
+            0;
+
+    }
+
+
+    .availability-status {
+
+        justify-content:
+            center;
+
+        text-align:
+            center;
+
+    }
+
+}
+/* =========================================
+   EXPERIMENTAL PROJECT SHOWCASE
+========================================= */
+
+#experimental-projects {
+
+    position: relative;
+
+    padding: 120px 0;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f9fc,
+            #eef1f8
+        );
+
+    color: #101828;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.experimental-heading {
+
+    max-width: 650px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+
+}
+
+
+.experimental-heading p {
+
+    margin-bottom: 12px;
+
+    color: #5267d9;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.18em;
+
+}
+
+
+.experimental-heading h2 {
+
+    margin-bottom: 15px;
+
+    font-size:
+        clamp(
+            38px,
+            5vw,
+            56px
+        );
+
+    line-height: 1;
+
+    letter-spacing: -0.05em;
+
+}
+
+
+.experimental-heading span {
+
+    display: block;
+
+    color: #667085;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =========================================
+   SHOWCASE CONTAINER
+========================================= */
+
+.experimental-project {
+
+    position: relative;
+
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.experimental-card {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        rgba(
+            16,
+            24,
+            40,
+            0.08
+        );
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(
+            16,
+            24,
+            40,
+            0.10
+        );
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+
+}
+
+
+.experimental-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 35px 90px
+        rgba(
+            16,
+            24,
+            40,
+            0.15
+        );
+
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.experimental-image {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 330px;
+
+    overflow: hidden;
+
+    background: #e9edf5;
+
+}
+
+
+.experimental-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s
+        cubic-bezier(
+            0.22,
+            1,
+            0.36,
+            1
+        );
+
+}
+
+
+.experimental-card:hover
+.experimental-image img {
+
+    transform:
+        scale(1.04);
+
+}
+
+
+/* =========================================
+   PROJECT NUMBER
+========================================= */
+
+.experimental-number {
+
+    position: absolute;
+
+    top: 20px;
+
+    left: 20px;
+
+    padding:
+        8px 14px;
+
+    border-radius:
+        50px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.40
+        );
+
+    color:
+        #101828;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.05em;
+
+    backdrop-filter:
+        blur(14px);
+
+    -webkit-backdrop-filter:
+        blur(14px);
+
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.experimental-content {
+
+    padding:
+        38px 42px 42px;
+
+}
+
+
+.experimental-category {
+
+    margin-bottom:
+        12px;
+
+    color:
+        #5267d9;
+
+    font-size:
+        11px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.12em;
+
+}
+
+
+.experimental-content h3 {
+
+    margin-bottom:
+        14px;
+
+    color:
+        #101828;
+
+    font-size:
+        40px;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -0.04em;
+
+}
+
+
+.experimental-content > p:not(
+    .experimental-category
+) {
+
+    margin-bottom:
+        28px;
+
+    color:
+        #667085;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.8;
+
+}
+
+
+/* =========================================
+   VISIT BUTTON
+========================================= */
+
+.experimental-visit {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    padding:
+        13px 22px;
+
+    border-radius:
+        50px;
+
+    background:
+        #101828;
+
+    color:
+        #ffffff;
+
+    font-size:
+        14px;
+
+    font-weight:
+        600;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.experimental-visit:hover {
+
+    transform:
+        translateX(5px);
+
+    background:
+        #5267d9;
+
+}
+
+
+.experimental-visit span {
+
+    font-size:
+        17px;
+
+}
+
+
+/* =========================================
+   GLASS ARROWS
+========================================= */
+
+.experimental-arrow {
+
+    position:
+        absolute;
+
+    top:
+        50%;
+
+    z-index:
+        10;
+
+    width:
+        56px;
+
+    height:
+        56px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border:
+        1px solid
+        rgba(
+            255,
+            255,
+            255,
+            0.75
+        );
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.45
+        );
+
+    color:
+        #101828;
+
+    font-size:
+        22px;
+
+    cursor:
+        pointer;
+
+    backdrop-filter:
+        blur(16px);
+
+    -webkit-backdrop-filter:
+        blur(16px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(
+            16,
+            24,
+            40,
+            0.12
+        );
+
+    transform:
+        translateY(-50%);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.experimental-prev {
+
+    left:
+        -28px;
+
+}
+
+
+.experimental-next {
+
+    right:
+        -28px;
+
+}
+
+
+.experimental-arrow:hover {
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.85
+        );
+
+    box-shadow:
+        0 15px 40px
+        rgba(
+            16,
+            24,
+            40,
+            0.18
+        );
+
+}
+
+
+/* =========================================
+   INDICATORS
+========================================= */
+
+.experimental-indicators {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    gap:
+        8px;
+
+    margin-top:
+        30px;
+
+}
+
+
+.experimental-dot {
+
+    width:
+        8px;
+
+    height:
+        8px;
+
+    border-radius:
+        50%;
+
+    background:
+        #d0d5dd;
+
+    cursor:
+        pointer;
+
+    transition:
+        width 0.3s ease,
+        background 0.3s ease;
+
+}
+
+
+.experimental-dot.active {
+
+    width:
+        28px;
+
+    border-radius:
+        20px;
+
+    background:
+        #5267d9;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    #experimental-projects {
+
+        padding:
+            90px 20px;
+
+    }
+
+
+    .experimental-heading {
+
+        margin-bottom:
+            40px;
+
+    }
+
+
+    .experimental-card {
+
+        border-radius:
+            22px;
+
+    }
+
+
+    .experimental-image {
+
+        height:
+            250px;
+
+    }
+
+
+    .experimental-content {
+
+        padding:
+            30px;
+
+    }
+
+
+    .experimental-content h3 {
+
+        font-size:
+            34px;
+
+    }
+
+
+    .experimental-prev {
+
+        left:
+            -10px;
+
+    }
+
+
+    .experimental-next {
+
+        right:
+            -10px;
+
+    }
+
+
+    .experimental-arrow {
+
+        width:
+            46px;
+
+        height:
+            46px;
+
+        font-size:
+            18px;
+
     }
 
 }
