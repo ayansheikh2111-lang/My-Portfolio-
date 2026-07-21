@@ -309,3 +309,85 @@ experimentalDots.forEach(
     }
 
 );
+/* =========================================
+   INTERACTIVE SKILLS
+========================================= */
+
+const skillCards =
+    document.querySelectorAll(
+        ".skill-card"
+    );
+
+
+skillCards.forEach(
+    function(card) {
+
+        const button =
+            card.querySelector(
+                ".skill-expand"
+            );
+
+
+        if (!button) {
+            return;
+        }
+
+
+        button.addEventListener(
+            "click",
+            function() {
+
+                const isOpen =
+                    card.classList.contains(
+                        "open"
+                    );
+
+
+                /* Close other cards */
+
+                skillCards.forEach(
+                    function(otherCard) {
+
+                        otherCard.classList.remove(
+                            "open"
+                        );
+
+                        const otherButton =
+                            otherCard.querySelector(
+                                ".skill-expand"
+                            );
+
+
+                        if (otherButton) {
+
+                            otherButton.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                        }
+
+                    }
+                );
+
+
+                /* Open selected card */
+
+                if (!isOpen) {
+
+                    card.classList.add(
+                        "open"
+                    );
+
+                    button.setAttribute(
+                        "aria-expanded",
+                        "true"
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);

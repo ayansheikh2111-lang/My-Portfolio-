@@ -2924,3 +2924,2151 @@ a {
     }
 
 }
+/* =========================================================
+   PREMIUM CONTACT SECTION
+   Abdul Ayan Sheikh Portfolio
+========================================================= */
+
+.contact-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    padding: 130px 0 100px;
+
+    color: #f8fafc;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(99, 102, 241, 0.16),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(56, 189, 248, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #070b14 0%,
+            #0b1020 45%,
+            #080b14 100%
+        );
+}
+
+
+/* =========================================================
+   PREMIUM BACKGROUND GRID
+========================================================= */
+
+.contact-section::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    opacity: 0.18;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.035) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        60px 60px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            transparent,
+            black 20%,
+            black 80%,
+            transparent
+        );
+}
+
+
+/* =========================================================
+   AMBIENT GLOWS
+========================================================= */
+
+.contact-glow {
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    pointer-events: none;
+
+    z-index: -2;
+
+    opacity: 0.35;
+}
+
+
+.contact-glow-one {
+    top: -180px;
+    left: -150px;
+
+    background:
+        rgba(99, 102, 241, 0.22);
+
+    animation:
+        contactGlowOne 10s ease-in-out infinite alternate;
+}
+
+
+.contact-glow-two {
+    right: -180px;
+    bottom: -200px;
+
+    background:
+        rgba(56, 189, 248, 0.16);
+
+    animation:
+        contactGlowTwo 12s ease-in-out infinite alternate;
+}
+
+
+@keyframes contactGlowOne {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+    }
+
+    100% {
+        transform:
+            translate3d(80px, 50px, 0)
+            scale(1.15);
+    }
+
+}
+
+
+@keyframes contactGlowTwo {
+
+    0% {
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+    }
+
+    100% {
+        transform:
+            translate3d(-60px, -40px, 0)
+            scale(1.2);
+    }
+
+}
+
+
+/* =========================================================
+   CONTACT CONTAINER
+========================================================= */
+
+.contact-container {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   CONTACT HEADING
+========================================================= */
+
+.contact-heading {
+    max-width: 760px;
+
+    margin-bottom: 70px;
+}
+
+
+.contact-eyebrow {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    color: #94a3b8;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.22em;
+
+    text-transform: uppercase;
+}
+
+
+.contact-eyebrow::before {
+    content: "";
+
+    width: 28px;
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #818cf8,
+            transparent
+        );
+}
+
+
+.contact-heading h2 {
+    margin: 0;
+
+    max-width: 700px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(42px, 6vw, 78px);
+
+    line-height: 1.04;
+
+    letter-spacing: -0.055em;
+
+    font-weight: 700;
+
+    color: #f8fafc;
+}
+
+
+.contact-heading h2 span {
+    display: inline-block;
+
+    color: #a5b4fc;
+
+    background:
+        linear-gradient(
+            120deg,
+            #c4b5fd,
+            #93c5fd,
+            #a5b4fc
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation:
+        contactTextShimmer 5s ease-in-out infinite;
+}
+
+
+@keyframes contactTextShimmer {
+
+    0%,
+    100% {
+        filter:
+            brightness(1);
+    }
+
+    50% {
+        filter:
+            brightness(1.25);
+    }
+
+}
+
+
+.contact-intro {
+    max-width: 620px;
+
+    margin-top: 28px;
+
+    color: #94a3b8;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CONTACT GRID
+========================================================= */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.1fr)
+        minmax(0, 0.9fr);
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT CTA CARD
+========================================================= */
+
+.contact-cta {
+
+    position: relative;
+
+    padding: 48px;
+
+    border-radius: 28px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.08),
+            rgba(255,255,255,0.025)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,0.10);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,0.25);
+
+    backdrop-filter:
+        blur(20px);
+
+    -webkit-backdrop-filter:
+        blur(20px);
+
+    transition:
+        transform 0.5s ease,
+        border-color 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+.contact-cta::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    right: -100px;
+
+    width: 250px;
+    height: 250px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(129, 140, 248, 0.12);
+
+    filter:
+        blur(60px);
+
+    pointer-events: none;
+}
+
+
+.contact-cta:none {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(165,180,252,0.25);
+
+    box-shadow:
+        0 40px 100px
+        rgba(0,0,0,0.35);
+}
+
+
+/* =========================================================
+   OPPORTUNITY STATUS
+========================================================= */
+
+.contact-status {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: fit-content;
+
+    padding: 10px 16px;
+
+    margin-bottom: 35px;
+
+    border-radius: 999px;
+
+    color: #cbd5e1;
+
+    background:
+        rgba(255,255,255,0.045);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.09);
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    box-shadow:
+        0 0 0 0
+        rgba(74,222,128,0.2);
+
+    animation:
+        opportunityPulse 3s ease-in-out infinite;
+}
+
+
+.contact-status-dot {
+
+    position: relative;
+
+    width: 8px;
+    height: 8px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background:
+        #4ade80;
+
+    box-shadow:
+        0 0 12px
+        rgba(74,222,128,0.9);
+}
+
+
+.contact-status-dot::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: -5px;
+
+    border-radius: 50%;
+
+    border:
+        1px solid
+        rgba(74,222,128,0.5);
+
+    animation:
+        statusRipple 2s ease-out infinite;
+}
+
+
+@keyframes statusRipple {
+
+    0% {
+        transform:
+            scale(0.6);
+
+        opacity: 0.8;
+    }
+
+    100% {
+        transform:
+            scale(1.7);
+
+        opacity: 0;
+    }
+
+}
+
+
+@keyframes opportunityPulse {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 0 0
+            rgba(74,222,128,0);
+    }
+
+    50% {
+        box-shadow:
+            0 0 0 6px
+            rgba(74,222,128,0.035);
+    }
+
+}
+
+
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+
+.contact-cta h3 {
+
+    max-width: 500px;
+
+    margin-bottom: 20px;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(30px, 4vw, 48px);
+
+    line-height: 1.1;
+
+    letter-spacing: -0.04em;
+
+    color: #f8fafc;
+}
+
+
+.contact-cta > p {
+
+    max-width: 520px;
+
+    margin-bottom: 35px;
+
+    color: #94a3b8;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MAIN CONVERSATION BUTTON
+========================================================= */
+
+.contact-main-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    min-width: 230px;
+
+    padding: 15px 18px 15px 22px;
+
+    border-radius: 999px;
+
+    color: #0b1020;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc,
+            #c7d2fe
+        );
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 15px 35px
+        rgba(129,140,248,0.20);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.contact-main-button:none {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 20px 45px
+        rgba(129,140,248,0.35);
+}
+
+
+.contact-arrow {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(15,23,42,0.9);
+
+    color: #ffffff;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.contact-main-button:none
+.contact-arrow {
+
+    transform:
+        rotate(45deg);
+}
+
+
+/* =========================================================
+   RIGHT CONTACT DETAILS
+========================================================= */
+
+.contact-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.contact-detail-card {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    min-height: 105px;
+
+    padding: 22px 24px;
+
+    border-radius: 20px;
+
+    color: #f8fafc;
+
+    background:
+        rgba(255,255,255,0.045);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.08);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+a.contact-detail-card {
+
+    cursor: pointer;
+
+}
+
+
+a.contact-detail-card:none {
+
+    transform:
+        translateX(7px);
+
+    background:
+        rgba(255,255,255,0.075);
+
+    border-color:
+        rgba(165,180,252,0.25);
+}
+
+
+/* =========================================================
+   CONTACT ICON
+========================================================= */
+
+.contact-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    color: #c7d2fe;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(129,140,248,0.16),
+            rgba(56,189,248,0.08)
+        );
+
+    border:
+        1px solid
+        rgba(165,180,252,0.15);
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.contact-label {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #64748b;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+}
+
+
+.contact-detail-card strong {
+
+    display: block;
+
+    color: #e2e8f0;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    word-break: break-word;
+}
+
+
+.contact-card-arrow {
+
+    margin-left: auto;
+
+    color: #64748b;
+
+    font-size: 20px;
+
+    transition:
+        transform 0.35s ease,
+        color 0.35s ease;
+}
+
+
+a.contact-detail-card:none
+.contact-card-arrow {
+
+    color: #c7d2fe;
+
+    transform:
+        translate(3px, -3px);
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.contact-bottom {
+
+    margin-top: 80px;
+
+    padding-top: 30px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.08);
+
+    text-align: center;
+}
+
+
+.contact-bottom p {
+
+    color: #64748b;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+.contact-bottom strong {
+
+    color: #cbd5e1;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .contact-heading {
+
+        margin-bottom: 50px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+
+        padding:
+            90px 0 70px;
+
+    }
+
+
+    .contact-heading h2 {
+
+        font-size:
+            clamp(38px, 12vw, 55px);
+
+    }
+
+
+    .contact-intro {
+
+        font-size: 15px;
+
+    }
+
+
+    .contact-cta {
+
+        padding: 30px 24px;
+
+        border-radius: 22px;
+
+    }
+
+
+    .contact-status {
+
+        font-size: 11px;
+
+    }
+
+
+    .contact-cta h3 {
+
+        font-size: 32px;
+
+    }
+
+
+    .contact-main-button {
+
+        width: 100%;
+
+    }
+
+
+    .contact-detail-card {
+
+        min-height: 90px;
+
+        padding:
+            18px;
+
+    }
+
+
+    .contact-icon {
+
+        width: 42px;
+        height: 42px;
+
+        border-radius: 12px;
+
+    }
+
+
+    .contact-detail-card strong {
+
+        font-size: 12px;
+
+    }
+
+
+    .contact-bottom {
+
+        margin-top: 60px;
+
+    }
+
+}/* =========================================
+   CONTACT — LINK INTERACTION FIX
+========================================= */
+
+.contact-section {
+    position: relative;
+    isolation: isolate;
+}
+
+.contact-glow,
+.contact-section::before {
+    pointer-events: none;
+}
+
+.contact-container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Clickable elements */
+.contact-main-button,
+a.contact-detail-card {
+    position: relative;
+    z-index: 20;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* Ensure content inside links doesn't interfere */
+.contact-main-button *,
+a.contact-detail-card * {
+    pointer-events: none;
+}
+
+/* Keep the actual link above decorative layers */
+.contact-main-button {
+    isolation: isolate;
+}
+
+a.contact-detail-card {
+    isolation: isolate;
+}
+/* =========================================
+   GLOBAL SMOOTH SCROLL FIX
+========================================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+#contact {
+    padding-bottom: 100px;
+}
+/* =========================================
+   ELITE SKILLS SECTION
+========================================= */
+
+.skills-section {
+
+    position: relative;
+
+    padding: 120px 7%;
+
+    overflow: hidden;
+
+    isolation: isolate;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #ffffff 50%,
+            #f8fafc 100%
+        );
+
+    font-family:
+        "Manrope",
+        "DM Sans",
+        sans-serif;
+
+}
+
+
+/* =========================================
+   AMBIENT BACKGROUND LIGHT
+========================================= */
+
+.skills-section::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    top: -250px;
+
+    right: -200px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(99,102,241,0.10);
+
+    filter:
+        blur(100px);
+
+    pointer-events: none;
+
+    z-index: -2;
+
+    animation:
+        skillsGlowOne
+        10s
+        ease-in-out
+        infinite
+        alternate;
+
+}
+
+
+.skills-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    bottom: -220px;
+
+    left: -150px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(14,165,233,0.07);
+
+    filter:
+        blur(100px);
+
+    pointer-events: none;
+
+    z-index: -2;
+
+    animation:
+        skillsGlowTwo
+        12s
+        ease-in-out
+        infinite
+        alternate;
+
+}
+
+
+/* =========================================
+   BACKGROUND ANIMATION
+========================================= */
+
+@keyframes skillsGlowOne {
+
+    0% {
+
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(-80px, 60px, 0)
+            scale(1.15);
+
+    }
+
+}
+
+
+@keyframes skillsGlowTwo {
+
+    0% {
+
+        transform:
+            translate3d(0, 0, 0)
+            scale(1);
+
+    }
+
+    100% {
+
+        transform:
+            translate3d(100px, -50px, 0)
+            scale(1.2);
+
+    }
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.skills-header {
+
+    position: relative;
+
+    max-width: 650px;
+
+    margin-bottom: 60px;
+
+    animation:
+        skillsHeaderReveal
+        0.8s
+        ease
+        both;
+
+}
+
+
+@keyframes skillsHeaderReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.skills-eyebrow {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color:
+        #6366f1;
+
+    font-size:
+        11px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.2em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.skills-header h2 {
+
+    margin:
+        0 0 18px;
+
+    color:
+        #111827;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        clamp(36px, 5vw, 64px);
+
+    font-weight:
+        700;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -0.05em;
+
+}
+
+
+.skills-header p {
+
+    max-width:
+        580px;
+
+    margin:
+        0;
+
+    color:
+        #64748b;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.8;
+
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.skills-section .skills-grid {
+
+    position:
+        relative;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap:
+        20px;
+
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.skills-section .skill-card {
+
+    position:
+        relative;
+
+    min-height:
+        350px;
+
+    padding:
+        30px;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid
+        rgba(15,23,42,0.08);
+
+    border-radius:
+        24px;
+
+    background:
+        rgba(255,255,255,0.80);
+
+    box-shadow:
+        0 15px 50px
+        rgba(15,23,42,0.05);
+
+    backdrop-filter:
+        blur(15px);
+
+    -webkit-backdrop-filter:
+        blur(15px);
+
+    opacity:
+        0;
+
+    transform:
+        translateY(30px);
+
+    animation:
+        skillCardReveal
+        0.8s
+        cubic-bezier(.2,.8,.2,1)
+        forwards;
+
+    transition:
+        transform 0.5s cubic-bezier(.2,.8,.2,1),
+        box-shadow 0.5s ease,
+        border-color 0.5s ease;
+
+}
+
+
+/* =========================================
+   STAGGERED CARD ANIMATION
+========================================= */
+
+.skills-section .skill-card:nth-child(1) {
+
+    animation-delay:
+        0.1s;
+
+}
+
+
+.skills-section .skill-card:nth-child(2) {
+
+    animation-delay:
+        0.2s;
+
+}
+
+
+.skills-section .skill-card:nth-child(3) {
+
+    animation-delay:
+        0.3s;
+
+}
+
+
+.skills-section .skill-card:nth-child(4) {
+
+    animation-delay:
+        0.4s;
+
+}
+
+
+@keyframes skillCardReveal {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================
+   CARD LIGHT EFFECT
+========================================= */
+
+.skills-section .skill-card::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        -100%;
+
+    width:
+        100%;
+
+    height:
+        1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(99,102,241,0.8),
+            transparent
+        );
+
+    transition:
+        left 0.7s ease;
+
+}
+
+
+.skills-section .skill-card:hover::before {
+
+    left:
+        100%;
+
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.skills-section .skill-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(99,102,241,0.25);
+
+    box-shadow:
+        0 25px 70px
+        rgba(15,23,42,0.10);
+
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.skills-section .skill-card-top {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    margin-bottom:
+        50px;
+
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.skills-section .skill-icon {
+
+    width:
+        52px;
+
+    height:
+        52px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border:
+        1px solid
+        rgba(99,102,241,0.08);
+
+    border-radius:
+        15px;
+
+    color:
+        #6366f1;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #e0e7ff
+        );
+
+    font-size:
+        22px;
+
+    transition:
+        transform 0.5s ease,
+        background 0.5s ease,
+        box-shadow 0.5s ease;
+
+}
+
+
+.skills-section .skill-card:hover .skill-icon {
+
+    transform:
+        rotate(10deg)
+        scale(1.1);
+
+    background:
+        #e0e7ff;
+
+    box-shadow:
+        0 10px 25px
+        rgba(99,102,241,0.15);
+
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.skills-section .skill-number {
+
+    color:
+        #cbd5e1;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        0.08em;
+
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.skills-section .skill-status {
+
+    color:
+        #818cf8;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        0.15em;
+
+}
+
+
+.skills-section .skill-card h3 {
+
+    margin:
+        10px 0 12px;
+
+    color:
+        #111827;
+
+    font-family:
+        "Manrope",
+        sans-serif;
+
+    font-size:
+        28px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        -0.03em;
+
+}
+
+
+.skills-section .skill-card-content p {
+
+    max-width:
+        430px;
+
+    margin:
+        0;
+
+    color:
+        #64748b;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.7;
+
+}
+
+
+/* =========================================
+   EXPLORE BUTTON
+========================================= */
+
+.skills-section .skill-expand {
+
+    position:
+        absolute;
+
+    left:
+        30px;
+
+    bottom:
+        28px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    padding:
+        10px 0;
+
+    border:
+        none;
+
+    color:
+        #111827;
+
+    background:
+        transparent;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+    transition:
+        color 0.3s ease;
+
+}
+
+
+.skills-section .skill-expand span {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        28px;
+
+    height:
+        28px;
+
+    border-radius:
+        50%;
+
+    color:
+        #ffffff;
+
+    background:
+        #111827;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.skills-section .skill-expand:hover {
+
+    color:
+        #6366f1;
+
+}
+
+
+.skills-section .skill-expand:hover span {
+
+    transform:
+        rotate(45deg);
+
+    background:
+        #6366f1;
+
+    box-shadow:
+        0 8px 20px
+        rgba(99,102,241,0.25);
+
+}
+
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
+
+.skills-section .skill-expand:focus-visible {
+
+    outline:
+        2px solid
+        #6366f1;
+
+    outline-offset:
+        5px;
+
+    border-radius:
+        5px;
+
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.skills-section .skill-details {
+
+    max-height:
+        0;
+
+    overflow:
+        hidden;
+
+    opacity:
+        0;
+
+    transform:
+        translateY(15px);
+
+    transition:
+        max-height 0.6s ease,
+        opacity 0.4s ease,
+        transform 0.5s ease;
+
+}
+
+
+/* =========================================
+   OPEN STATE
+========================================= */
+
+.skills-section .skill-card.open {
+
+    min-height:
+        430px;
+
+}
+
+
+.skills-section .skill-card.open
+.skill-details {
+
+    max-height:
+        180px;
+
+    margin-top:
+        25px;
+
+    opacity:
+        1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* =========================================
+   OPEN BUTTON
+========================================= */
+
+.skills-section .skill-card.open
+.skill-expand span {
+
+    transform:
+        rotate(45deg);
+
+    background:
+        #6366f1;
+
+    box-shadow:
+        0 8px 20px
+        rgba(99,102,241,0.25);
+
+}
+
+
+/* =========================================
+   SKILL LIST
+========================================= */
+
+.skills-section .skill-list {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        8px;
+
+}
+
+
+.skills-section .skill-list span {
+
+    padding:
+        8px 11px;
+
+    border:
+        1px solid
+        #e2e8f0;
+
+    border-radius:
+        8px;
+
+    color:
+        #475569;
+
+    background:
+        #f8fafc;
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    font-size:
+        11px;
+
+    animation:
+        skillReveal
+        0.4s
+        ease
+        both;
+
+}
+
+
+.skills-section .skill-list span:nth-child(1) {
+
+    animation-delay:
+        0.05s;
+
+}
+
+
+.skills-section .skill-list span:nth-child(2) {
+
+    animation-delay:
+        0.10s;
+
+}
+
+
+.skills-section .skill-list span:nth-child(3) {
+
+    animation-delay:
+        0.15s;
+
+}
+
+
+.skills-section .skill-list span:nth-child(4) {
+
+    animation-delay:
+        0.20s;
+
+}
+
+
+.skills-section .skill-list span:nth-child(5) {
+
+    animation-delay:
+        0.25s;
+
+}
+
+
+@keyframes skillReveal {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(10px);
+
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .skills-section {
+
+        padding:
+            100px 5%;
+
+    }
+
+
+    .skills-section .skills-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .skills-section {
+
+        padding:
+            80px 20px;
+
+    }
+
+
+    .skills-header {
+
+        margin-bottom:
+            45px;
+
+    }
+
+
+    .skills-header h2 {
+
+        font-size:
+            clamp(34px, 10vw, 48px);
+
+    }
+
+
+    .skills-section .skills-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            16px;
+
+    }
+
+
+    .skills-section .skill-card {
+
+        min-height:
+            330px;
+
+        padding:
+            25px;
+
+    }
+
+
+    .skills-section .skill-card.open {
+
+        min-height:
+            420px;
+
+    }
+
+
+    .skills-section .skill-card-top {
+
+        margin-bottom:
+            40px;
+
+    }
+
+
+    .skills-section .skill-expand {
+
+        left:
+            25px;
+
+        bottom:
+            24px;
+
+    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .skills-section *,
+    .skills-section::before,
+    .skills-section::after {
+
+        animation:
+            none !important;
+
+        transition:
+            none !important;
+
+    }
+
+}
